@@ -1,0 +1,123 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+/* Layout styles */
+section {
+    overflow: hidden;
+    padding: 10px;
+    margin: auto;
+    width: 70%;
+}
+
+article {
+    float: right;
+    width: 70%;
+}
+
+aside {
+    float: left;
+    width: 30%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+/* Layout design */
+nav.navigation {
+    background-color: #455C7B;
+    margin-top: 40px;
+    overflow: hidden;
+    color: white;
+}
+
+nav.navigation ul {
+    font-size: 34px;
+    width: 665px;
+    height: 80px;
+    line-height: 80px;
+    margin: auto;
+    list-style: none;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+    margin-right: 70px;
+}
+
+
+/* General styles across the whole site */
+section a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid #ffc629;
+}
+
+section a:hover {
+    background: #ffc629;
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    color: #ffc629;
+}
+
+p {
+    text-align: justify;
+}
+
+h1,h2,h3,h4,h5 {
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+blockquote {
+    padding: 20px;
+    border-radius: 50px;
+    background-color: rgba(255, 198, 41, 0.43);
+}
+
+aside h1 {
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+/* Custom specific styles */
+.author {
+    font-style: italic;
+    color: gray;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.profile-pic {
+    width: 100%;
+}
+
+table.gallery {
+    margin: 40px auto;
+}
+
+table.gallery img {
+    width: 130px;
+}
+
+
+table.gallery th {
+    color: rgba(69, 92, 123, 0.90);
+}
+
+/*header, section, aside, footer, article {*/
+    /*outline: 5px dotted red;*/
+/*}*/
