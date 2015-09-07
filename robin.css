@@ -28,7 +28,7 @@ footer {
     position: fixed;
     bottom: 0;
 }
-
+ 
 /* Layout design */
 nav.navigation {
     background-color: #455C7B;
@@ -117,6 +117,10 @@ table.gallery img {
 table.gallery th {
     color: rgba(69, 92, 123, 0.90);
 }
+
+li.hilight {
+    background: yellow;
+ }
 
 /*header, section, aside, footer, article {*/
     /*outline: 5px dotted red;*/
