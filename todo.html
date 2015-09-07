@@ -23,16 +23,22 @@
       </ul>
    </nav>
 
+  <!--ZMENA SEKCI KVULI JQUERY ANIMACI.-->
   <section>
+  	<a href="#section2">Click to create ToDo list</a>
+  </section>
+  
+ <section id="section2">
       <article>
           <h1>ToDo:</h1>
           <ul>
               <li>Nakrmit Ijáčka</li>
               <li>Pomoci Sově</li>
-              <li>Najít med pro medvídka</li>
+               <li class="task">Najít med pro medvídka</li>
+              <button>Delete</button>
           </ul>
 
-          <!--SEM PRIJDE TVUJ KOD NA PRIDANI INPUTU A BUTTONU-->
+          <!--KOD NA PRIDANI INPUTU A BUTTONU-->
           <form>
             <label for "input">Úkoly:</label>
             <input type="text" name="Úkoly" value="" />
@@ -47,7 +53,15 @@
           <blockquote>“We'll be Friends Forever, won't we, Pooh? asked Piglet.
               Even longer,' Pooh answered."</blockquote>
       </aside>
-  </section>
+   
+   </section id="section2">
+  	
+  	<div class="main">
+  	<section></section>
+	  </div>
+
+	  <div class="main" id="section2">
+	  </div>
 
   </body>
   <script>
