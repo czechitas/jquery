@@ -6,6 +6,10 @@ $(document).ready(function() {
     $(".todo-list li:last-child button").click(function() {
       $(this).closest("li").remove()
     });
+    // Animace polozky pri kliku
+    $(".todo-list li:last-child").click(function() {
+      $(this).animate({marginLeft: "10px"}).animate({marginLeft: "-10px"}).animate({marginLeft: 0})
+    });
   });
 
   $(".hilight-task").click(function() {
