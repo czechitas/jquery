@@ -6,6 +6,9 @@ $(document).ready(function() {
     $(".todo-list li:last-child button").click(function() {
       $(this).closest("li").remove()
     });
-    $("input").val("");
   });
+
+  $(".hilight-task").click(function() {
+    $(".todo-list li:last-child").toggleClass("hilight");
+  })
 });
