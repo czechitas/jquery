@@ -4,11 +4,10 @@ $(document).ready(function() {
     $("input").val("");
     // Vybereme tlacitko v naposledy pridane polozce
     $(".todo-list li:last-child button").click(function() {
-      $(this).closest("li").remove()
-    });
-    // Animace polozky pri kliku
-    $(".todo-list li:last-child").click(function() {
-      $(this).animate({marginLeft: "10px"}).animate({marginLeft: "-10px"}).animate({marginLeft: 0})
+      // Polozka se nejprve skryje a pak odebere
+      $(this).closest("li").fadeOut(function() {
+        $(this).remove();
+      });
     });
   });
 
