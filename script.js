@@ -1,16 +1,11 @@
 $(document).ready(function() {
   $("#add-task").click(function() {
-    $(".todo-list").append("<li>"+$("input").val()+"</li>")
+    $(".todo-list").append("<li>"+$("input").val()+" <button>Smazat</button></li>")
     $("input").val("");
-    // Vybereme naposledy pridanou polozku
-    $(".todo-list li:last-child").click(function() {
-      $(this).remove()
-      $("input").val($(this).text());
+    // Vybereme tlacitko v naposledy pridane polozce
+    $(".todo-list li:last-child button").click(function() {
+      $(this).closest("li").remove()
     });
+    $("input").val("");
   });
-
-  // Kliknuti na polozku seznamu ji smaze
-  $(".todo-list li").click(function() {
-    $(this).remove()
-  })
 });
